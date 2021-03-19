@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="com.stormnet.client.ui.history.HistoryOfOrdersController">
+    <padding>
+        <Insets bottom="10" left="25" right="25" top="5" />
+    </padding>
+
+    <Label text="Мои заказы:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+
+    <HBox alignment="CENTER" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <TableView fx:id="allOrdersTable">
+            <columns>
+                <TableColumn prefWidth="150.0" text="Услуга">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="lastName" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="150.0" text="Дата">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="dateOfOrder" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="150.0" text="Адрес">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="address" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </HBox>
+    <HBox alignment="BOTTOM_RIGHT" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <Button onAction="#exitBtnPressed" text="Назад" />
+    </HBox>
+</GridPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:controller="com.stormnet.client.ui.pricelist.PriceListController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets bottom="10" left="25" right="25" top="25" />
+    </padding>
+
+    <Label alignment="center" text="Выберете услугу, которая вам необходима:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+
+    <HBox alignment="bottom_left" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <Button onAction="#service1BtnPressed" text="УБОРКА КВАРТИР И КОТТЕДЖЕЙ" />
+    </HBox>
+
+    <HBox alignment="bottom_left" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="3">
+        <Button onAction="#service2ButtonPressed" text="УБОРКА ПОСЛЕ РЕМОНТА" />
+    </HBox>
+
+    <HBox alignment="bottom_left" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <Button onAction="#service3ButtonPressed" text="УБОРКА ОФИСОВ И ПРОИЗВОДСТВЕННЫХ ПОМЕЩЕНИЙ" />
+    </HBox>
+
+    <HBox alignment="bottom_left" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="5">
+        <Button onAction="#service4ButtonPressed" text="МОЙКА ОКОН И ВИТРИН" />
+    </HBox>
+
+    <HBox alignment="bottom_left" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="6">
+        <Button onAction="#service5ButtonPressed" text="ХИМЧИСТКА МЕБЕЛИ И ПОКРЫТИЙ" />
+    </HBox>
+
+    <HBox alignment="bottom_left" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="10">
+        <Button onAction="#cancelButtonPressed" text="Назад" textAlignment="CENTER" />
+    </HBox>
+</GridPane>

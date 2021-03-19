@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane fx:controller="com.stormnet.client.ui.primarystage.PrimaryStageController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="25" right="25" bottom="10" left="25"/>
+    </padding>
+
+    <Label text="Войти как:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+    <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1" GridPane.rowIndex="0">
+        <Button text="Менеджер" onAction="#loginAsAdministrator" />
+    </HBox>
+
+    <HBox spacing="10" alignment="bottom_left" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Button text="Клиент" onAction="#loginAsClient" />
+    </HBox>
+</GridPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<GridPane fx:controller="com.stormnet.client.ui.allOrders.AllOrdersController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="5" right="25" bottom="10" left="25"/>
+    </padding>
+
+    <HBox spacing="10" alignment="BOTTOM_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <Label text="Списк всех заказов:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <TableView fx:id="allOrderTable">
+            <columns>
+                <TableColumn prefWidth="50.0" text="ID">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="150.0" text="Имя Фамилия">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="lastName" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="150.0" text="Услуга">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="firstName" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="150.0" text="Дата">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="dateOfOrder" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="150.0" text="Адрес">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="address" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="150.0" text="Email">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="email" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="150.0" text="Телефон">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="telephoneNumber" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </HBox>
+    <HBox spacing="10" alignment="BOTTOM_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="3">
+        <Button text="Добавить новый заказ" onAction="#addPersonBtnPressed" />
+    </HBox>
+    <HBox spacing="10" alignment="BOTTOM_RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="5">
+        <Button text="Назад" onAction="#exitBtnPressed" />
+    </HBox>
+</GridPane>

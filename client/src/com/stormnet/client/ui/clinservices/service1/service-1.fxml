@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane fx:controller="com.stormnet.client.ui.clinservices.service1.Service1Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="25" right="25" bottom="10" left="25"/>
+    </padding>
+
+    <Label text="УБОРКА КВАРТИР И КОТТЕДЖЕЙ:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <Label text="•покрытий полов, плинтусов;" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Label text="•чистка зеркальных и стеклянных поверхностей, предметов интерьера;" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <Label text="•обеспыливание потолков, стен, дверей, радиаторов и мебели;" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Label text="•мойка сантехники на кухне, в ванной и санузле, уборка помещений;" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <Label text="•обезжиривание кухнных поверностей и бытовых приборов;" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <Label text="•вынос мусора:" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+
+    <Label text="СТОИМОСТЬ:" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+    <Label text="Однокомнатная квартира - от 45 рублей" GridPane.columnIndex="0" GridPane.rowIndex="9"/>
+    <Label text="Двухкомнатная квартира - от 60 рублей" GridPane.columnIndex="0" GridPane.rowIndex="10"/>
+    <Label text="Трехкомнатная квартира - от 72 рублей" GridPane.columnIndex="0" GridPane.rowIndex="11"/>
+    <Label text="Коттеджи - от 150 рублей" GridPane.columnIndex="0" GridPane.rowIndex="12"/>
+
+    <HBox spacing="10" alignment="bottom_left" GridPane.columnIndex="0" GridPane.rowIndex="13">
+        <Button text="Оставить заявку" onAction="#toOrderButtonPressed" />
+    </HBox>
+
+    <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1" GridPane.rowIndex="13">
+        <Button text="Отмена" onAction="#cancelButtonPressed" />
+    </HBox>
+</GridPane>
+

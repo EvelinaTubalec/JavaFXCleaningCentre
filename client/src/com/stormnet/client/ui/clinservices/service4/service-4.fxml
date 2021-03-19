@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane fx:controller="com.stormnet.client.ui.clinservices.service4.Service4Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="25" right="25" bottom="10" left="25"/>
+    </padding>
+
+    <Label text="МОЙКА ОКОН И ВИТРИН:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <Label text="•мытье стекол, рам;" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Label text="•удаление стойких загрязнений, клейкой ленты;" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <Label text="•очистку пространств между рамами, подоконников, откосов;" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Label text="•удаление клейких защитных пленок и остатков утеплителя." GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+
+    <Label text="СТОИМОСТЬ:" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <Label text="Для оценки работ по мойке окон и витрин свяжитесь с нами удобным для вас способом" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+
+    <HBox spacing="10" alignment="bottom_left" GridPane.columnIndex="0" GridPane.rowIndex="13">
+        <Button text="Оставить заявку" onAction="#toOrderButtonPressed" />
+    </HBox>
+
+    <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1" GridPane.rowIndex="13">
+        <Button text="Отмена" onAction="#cancelButtonPressed" />
+    </HBox>
+</GridPane>
+

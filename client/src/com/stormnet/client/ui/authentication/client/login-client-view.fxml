@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:controller="com.stormnet.client.ui.authentication.client.LoginClientController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="25" right="25" bottom="10" left="25"/>
+    </padding>
+
+    <Label text="Введите свои данные:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+    <Label text="Номер телефона: +375:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="telephoneNumberField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Label text="Пароль:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+    <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1" GridPane.rowIndex="7">
+        <Button text="Войти" onAction="#signInButtonPressed" />
+        <Button text="Отмена" onAction="#CancelButtonPressed" />
+    </HBox>
+</GridPane>

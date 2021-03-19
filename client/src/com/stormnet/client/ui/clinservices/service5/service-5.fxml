@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane fx:controller="com.stormnet.client.ui.clinservices.service5.Service5Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="25" right="25" bottom="10" left="25"/>
+    </padding>
+
+    <Label text="ХИМЧИСТКА МЕБЕЛИ И ПОКРЫТИЙ:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <Label text="•сухая (пенная) чистка;" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Label text="•экстракторная;" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <Label text="•выведение пятен;" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Label text="•глубокая химчистка;" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <Label text="•нанесение на поверхность мягкой мебели составов." GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+
+    <Label text="СТОИМОСТЬ:" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+    <Label text="Для оценки работ химчистке на дому свяжитесь с нами удобным для вас способом" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+
+    <HBox spacing="10" alignment="bottom_left" GridPane.columnIndex="0" GridPane.rowIndex="13">
+        <Button text="Оставить заявку" onAction="#toOrderButtonPressed" />
+    </HBox>
+
+    <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1" GridPane.rowIndex="13">
+        <Button text="Отмена" onAction="#cancelButtonPressed" />
+    </HBox>
+</GridPane>
+

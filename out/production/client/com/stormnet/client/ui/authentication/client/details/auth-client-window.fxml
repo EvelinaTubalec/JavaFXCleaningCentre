@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:controller="com.stormnet.client.ui.authentication.client.details.AuthClientController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="25" right="25" bottom="10" left="25"/>
+    </padding>
+
+    <Label text="Выполните вход или зарегистрируйтесь:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+    <HBox spacing="10" alignment="bottom_left" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <Button text="Войти в свой аккаунт" onAction="#signIn" />
+    </HBox>
+
+    <HBox spacing="10" alignment="bottom_left" GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <Button text="Регистрация" onAction="#registrationNewClient" />
+    </HBox>
+
+    <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1" GridPane.rowIndex="8">
+        <Button text="Отмена" onAction="#cancel" />
+    </HBox>
+</GridPane>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane fx:controller="com.stormnet.client.ui.registration.ClientRegisterController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="25" right="25" bottom="10" left="25"/>
+    </padding>
+
+    <Label text="Заполните поля:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+    <Label text="Телефон:    +375" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="telephoneNumberField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="Пароль:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1" GridPane.rowIndex="7">
+        <Button text="Зарегистрироваться" onAction="#registerNewUser" />
+    </HBox>
+    <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1" GridPane.rowIndex="8">
+        <Button text="Отмена" onAction="#cancel" />
+    </HBox>
+</GridPane>
+

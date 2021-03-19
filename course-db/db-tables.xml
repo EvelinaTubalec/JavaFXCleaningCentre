@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><all-db-tables>
+
+	<db-table name="orders" table-file="course-db/orders.xml">
+		<max-id-value>6</max-id-value>
+	</db-table>
+	<db-table name="users" table-file="course-db/users.xml">
+		<max-id-value>1</max-id-value>
+	</db-table>
+	<db-table name="managers" table-file="course-db/managers.xml">
+		<max-id-value>0</max-id-value>
+	</db-table>
+	<db-table name="reviews" table-file="course-db/reviews.xml">
+		<max-id-value>1</max-id-value>
+	</db-table>
+</all-db-tables>

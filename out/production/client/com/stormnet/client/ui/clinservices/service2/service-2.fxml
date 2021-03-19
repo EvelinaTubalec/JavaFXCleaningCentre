@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane fx:controller="com.stormnet.client.ui.clinservices.service2.Service2Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="25" right="25" bottom="10" left="25"/>
+    </padding>
+
+    <Label text="УБОРКА ПОСЛЕ РЕМОНТА:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <Label text="•чистка от стойких загрязнений в виде пятен извести, цемента, краски, клея и т.д.;" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Label text="•мойка окон, откосов, подоконников и рам, зеркальных поверхностей;" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <Label text="•очистка сантехники и радиаторов отопления, а также дезинфекция помещения;" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Label text="•обеспыливание, полировка мебели, дверных блоков, светильников, ручек;" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <Label text="•мытье плинтусов, полов, перегородок с использованием очищающих органических средств;" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <Label text="•вынос и вывоз строительного мусора." GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+
+    <Label text="СТОИМОСТЬ:" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+    <Label text="Однокомнатная квартира - от 80 рублей" GridPane.columnIndex="0" GridPane.rowIndex="9"/>
+    <Label text="Двухкомнатная квартира - от 110 рублей" GridPane.columnIndex="0" GridPane.rowIndex="10"/>
+    <Label text="Трехкомнатная квартира - от 150 рублей" GridPane.columnIndex="0" GridPane.rowIndex="11"/>
+    <Label text="Коттеджи - от 250 рублей" GridPane.columnIndex="0" GridPane.rowIndex="12"/>
+
+    <HBox spacing="10" alignment="bottom_left" GridPane.columnIndex="0" GridPane.rowIndex="13">
+        <Button text="Оставить заявку" onAction="#toOrderButtonPressed" />
+    </HBox>
+
+    <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1" GridPane.rowIndex="13">
+        <Button text="Отмена" onAction="#cancelButtonPressed" />
+    </HBox>
+</GridPane>
